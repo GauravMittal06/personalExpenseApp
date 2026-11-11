@@ -9,9 +9,8 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>Kharcha</title>
+<title>Burn</title>
 <style>
-/* One screen: sticky header, glowing month ring + week strip, Anushka balance, day-grouped list, spring bottom sheets. */
 :root{
   --bg:#0b0c0f; --card:#14161b; --card2:#1c1f26; --line:#252933; --glass:rgba(20,22,27,.72);
   --fg:#f4f2ed; --muted:#8a8f99; --dim:#5b606a;
@@ -207,7 +206,7 @@ main{position:relative;z-index:1}
 </style>
 </head>
 <body>
-<div class="splash" id="splash"><svg viewBox="0 0 160 160"><circle class="s1" cx="80" cy="80" r="70"/><circle class="s2" cx="80" cy="80" r="70"/></svg><div class="word">KHARCHA</div></div>
+<div class="splash" id="splash"><svg viewBox="0 0 160 160"><circle class="s1" cx="80" cy="80" r="70"/><circle class="s2" cx="80" cy="80" r="70"/></svg><div class="word">Burn</div></div>
 <div class="ambient" id="ambient"></div>
 <div class="app">
   <header class="top" id="top">
@@ -319,7 +318,7 @@ const BASE_OUT = [
 const IN = [{k:'anushka',n:'Anushka',c:'#ff8fb1'},{k:'friends',n:'Friend',c:'#5fd3a5'},{k:'other',n:'Other',c:'#9aa0aa'}];
 const PALETTE = ['#7ee0ff','#c3f584','#ff9ecb','#9fb4ff','#ffcf70','#8af0c8','#e7a6ff','#ffad8a'];
 const TRANSFER = new Set(['friends','anushka']);
-const KEY='kharcha.v1';
+const KEY='Burn.v1';
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = id => document.getElementById(id);
 const fmt = n => '₹' + Math.round(n).toLocaleString('en-IN');

@@ -1,5 +1,5 @@
-// Kharcha offline cache. Bump VERSION whenever you change index.html.
-const VERSION = 'kharcha-v3';
+// 'Burn' offline cache. Bump VERSION whenever you change index.html.
+const VERSION = 'Burn-v3';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
